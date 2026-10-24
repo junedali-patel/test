@@ -1,0 +1,7 @@
+{
+  "task_id": "task-flowchart-fix",
+  "task_description": "Fix compact/meaningful flowchart generation (Goal A: group consecutive PROCESS nodes so 50-line file yields ~10-20 nodes, not 50+) and add automatic code-to-flowchart on cursor click (Goal B: clicking any editor line triggers a selection-aware flowchart fetch with no manual Generate button).",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002"],
+  "blocked_reason": null
+}

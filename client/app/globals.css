@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  /* Visual Studio / VS Code Official Dark+ Design System */
+  --vscode-bg-editor: #1e1e1e;
+  --vscode-bg-sidebar: #252526;
+  --vscode-bg-activity: #333333;
+  --vscode-bg-titlebar: #323233;
+  --vscode-bg-statusbar: #007acc;
+  --vscode-bg-tab-active: #1e1e1e;
+  --vscode-bg-tab-inactive: #2d2d2d;
+  --vscode-bg-input: #3c3c3c;
+  --vscode-bg-hover: #2a2d2e;
+  --vscode-bg-selected: #094771;
+  --vscode-bg-badge: #007acc;
+
+  /* VS Code Accents & Status Colors */
+  --vscode-blue: #007acc;
+  --vscode-blue-hover: #1177bb;
+  --vscode-button-bg: #0e639c;
+  --vscode-button-hover: #1177bb;
+  --vscode-success: #89d185;
+  --vscode-warning: #cca700;
+  --vscode-error: #f48771;
+  --vscode-info: #75beff;
+
+  /* Typography Colors */
+  --vscode-fg-primary: #cccccc;
+  --vscode-fg-bright: #ffffff;
+  --vscode-fg-secondary: #969696;
+  --vscode-fg-muted: #6e7681;
+
+  /* Clean Borders */
+  --vscode-border: #3c3c3c;
+  --vscode-border-subtle: #2b2b2b;
+  --vscode-focus-border: #007acc;
+
+  /* Fonts */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-family-mono: Consolas, "Courier New", "JetBrains Mono", Menlo, Monaco, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--vscode-bg-editor);
+  color: var(--vscode-fg-primary);
+  font-family: var(--font-family-base);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* VS Code Flat Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(121, 121, 121, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.7);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.ide-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.ide-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(121, 121, 121, 0.35);
+}
+
+.ide-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.6);
+}
+
+/* VS Code Text Selection */
+::selection {
+  background-color: #264f78;
+  color: #ffffff;
+}
+
+/* VS Code Button Utility */
+.vscode-btn-primary {
+  background-color: #0e639c;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 4px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.vscode-btn-primary:hover:not(:disabled) {
+  background-color: #1177bb;
+}
+
+.vscode-btn-secondary {
+  background-color: #313131;
+  color: #cccccc;
+  border: 1px solid #3c3c3c;
+  border-radius: 2px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.vscode-btn-secondary:hover:not(:disabled) {
+  background-color: #3c3c3c;
+  color: #ffffff;
+}
+
+/* Monaco Editor active line highlight */
+.codemind-flowchart-line-highlight {
+  background-color: #282828 !important;
+  border-left: 2px solid #007acc !important;
+}
